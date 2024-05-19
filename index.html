@@ -11,51 +11,40 @@
 <body>
     
     <nav class="navbar navbar-expand-lg bg-body-tertiary  bg-dark " data-bs-theme="dark">
-        <div class="container-fluid">
+        <div class="container-fluid ">
           <a class="navbar-brand" href="#">CINEBOG</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Lista de peliculas</a>
+          <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 subMenuPeliculas">
+              <li class="nav-item ">
+                <a class="nav-link active " aria-current="page" href="#">Lista de peliculas</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Ejm.endgame" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
 
-            </form>
+            <div  class="container text-center">
+              <input class="form-control" type="text" id="searchInput" placeholder="Filtrar por nombre...">
+
+
+            </div>
+
           </div>
         </div>
       </nav>
 
-        <input type="text" id="searchInput" placeholder="Filtrar por nombre...">
+
 
 
       <img src="Imagenes/icono.png" class="img-portada" alt="...">
 
-      <h1 class="Titulo1">Mi lista de peliculas</h1>
+      <h1 class="text-center">Mi lista de peliculas</h1>
       <div id="cardContainer"></div>
 
-      <div class="card-group" >
+      <div class="card-group container " >
 
-        <div class="card" data-name="Alerta Roja">
-          <img src="Imagenes/AlertaRoja.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Alerta Roja</h5>
-            <p class="card-text">TUn criminólogo del FBI y el ladrón de arte más buscado del mundo se hacen compinches para atrapar a una escurridiza estafadora que siempre va un paso por delante.</p>
-          </div>
-        </div>
 
-        <div class="card" data-name="A todos los chicos que enamore">
-          <img src="Imagenes/Atodosloschicosqueenamore.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">A todos los chicos que enamore</h5>
-            <p class="card-text">Cuando sus cartas de amor secretas llegan inexplicablemente a los cinco chicos de los que se ha enamorado, la apacible vida estudiantil de Lara Jean se pone patas arriba. Ve todo lo que quieras. Lana Condor y Noah Centineo protagonizan esta comedia romántica basada en la exitosa novela para jóvenes de Jenny Han.</p>
-          </div>
-        </div>
+
 
         <div class="card" data-name="endgame">
           <img src="Imagenes/endgame.jpg" class="card-img-top" alt="...">
@@ -113,7 +102,7 @@
           </div>
         </div>
 
-        <div class="card" data-name="avengers" data-name="Son como niños 2"> 
+        <div class="card"  data-name="Son como niños 2"> 
           <img src="Imagenes/SonComoNiños.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Son como niños 2</h5>
@@ -122,6 +111,53 @@
         </div>
 
       </div>
+
+      <div class="container">
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card" data-name="Alerta Roja">
+            <h1 class="card-title">Alerta Roja</h1>
+              <br>
+            <img src="Imagenes/AlertaRoja.jpg" width="5%" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-white">Descripción</h5>
+              <p class="card-text">Un criminólogo del FBI y el ladrón de arte más buscado del mundo se hacen compinches para atrapar a una escurridiza estafadora que siempre va un paso por delante.</p>
+            </div>
+        </div>
+
+        <div class="col">
+          <div class="card" data-name="A todos los chicos que enamore">
+            <img src="Imagenes/Atodosloschicosqueenamore.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">A todos los chicos que enamore</h5>
+              <p class="card-text">Cuando sus cartas de amor secretas llegan inexplicablemente a los cinco chicos de los que se ha enamorado, la apacible vida estudiantil de Lara Jean se pone patas arriba. Ve todo lo que quieras. Lana Condor y Noah Centineo protagonizan esta comedia romántica basada en la exitosa novela para jóvenes de Jenny Han.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+              
+    </div>
     
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
