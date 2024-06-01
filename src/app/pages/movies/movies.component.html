@@ -1,0 +1,18 @@
+<div class="container espacio">
+  <div class="row-8">
+    <input type="text" class="form-control" placeholder="Buscar películas..." [(ngModel)]="searchQuery" (ngModelChange)="onSearchChange($event)">
+  </div>
+  </div>
+
+  <div class="text-center">
+    <h1>Lista de peliculas</h1>
+  </div>
+
+  <div class="movie-list">
+    <div *ngFor="let movie of filteredMovies" class="movie-item">
+      <img [src]="movie.image" alt="{{ movie.name }}">
+      <h3>{{ movie.name }}</h3>
+      <p>{{ movie.description }}</p>
+    </div>
+  </div>
+  
